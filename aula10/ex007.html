@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summing values</title>
+
+    <style>
+        body{
+            padding: 5px 40px;
+            background: rgb(134, 81, 219);
+            color: aliceblue;
+            font: normal 18pt Verdana, sans-serif;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        h1{
+            text-shadow: 0.5px 0.5px 1px rgb(204, 204, 204);
+        }
+
+        .txt{
+            border-radius: 4px;
+            border: none;
+            font-size: 16pt;
+            color: black;
+            width: 150px;
+        }
+
+        .btn{
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgb(252, 252, 252);
+            background-color: transparent;
+            border-radius: 7px;
+            margin-left: 25px;
+            font: normal 12pt Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+        #res{
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Summing values</h1>
+    <input type="number" name="txtn1" id="txtn1" class="txt"> +
+    <input type="number" name="txtn2" id="txtn2" class="txt">
+    <input type="button" value="sum" onclick="sum()" class="btn">
+
+    <div id="res">Result</div>
+
+    <script>
+        function sum(){
+            var tn1 = window.document.querySelector('input#txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.querySelector('div#res')
+            
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+
+            var s = n1 + n2
+            res.innerHTML = `The sum of ${n1} and ${n2} is equal to ${s}`
+        }
+    </script>
+    
+</body>
+</html>

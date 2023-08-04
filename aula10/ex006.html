@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background: rgb(233, 38, 38);
+            font: normal 18pt Verdana, sans-serif;
+            color: aliceblue;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <!-- event: onclick -->
+    <div id="area">
+        Click
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', toclick)
+        a.addEventListener('mouseenter', enter)
+        a.addEventListener('mouseout', exit)
+
+        function toclick() {
+            a.innerText = 'Clicked XD'
+            a.style.background = '#19d448'
+            a.style.color = 'white'
+            return a
+        }
+
+        function enter(){
+            a.innerText = 'Entered :)'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        }
+
+        function exit(){
+            a.innerText = 'Exited :('
+            a.style.background = 'blue'
+            a.style.color = 'white'
+        }
+    </script>
+    
+</body>
+</html>

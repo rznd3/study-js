@@ -4,7 +4,7 @@ function load() {
     var img = document.getElementById('img')
     var title = document.getElementById('title')
     var date = new Date
-    var hour = date.getHours()
+    var hour = 7 //date.getHours()
 
     msg.innerHTML = `Now it's ${hour} o'clock `
 

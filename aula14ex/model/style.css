@@ -24,3 +24,13 @@ footer {
     font-style: italic;
     font-size: 10pt;
 }
+
+.btn {
+    height: 50px;
+    background-color:rgb(134, 81, 219);
+    border: none;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 7px;
+    font: bold 14pt Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}

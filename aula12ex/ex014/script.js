@@ -9,7 +9,6 @@ function load() {
     msg.innerHTML = `Now it's ${hour} o'clock `
 
     if (hour >= 0 && hour < 12) {
-       //title.style.color = 'black'
         img.src = 'img/morning.webp'
         document.body.style.background = '#ebe8db'
 

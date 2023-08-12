@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Number</h1>
+    </header>
+
+    <section>
+        <div>
+            <p id="number"> Number (between 1 and 100):
+                <input type="number" name="addnumber" id="addnumber">
+                <input type="button" value="Add" class="btn" onclick="add()">
+            </p>
+        </div>
+        <div class="column">
+            <select name="tabletxt" id="tabletxt" size="6">
+            </select>
+            <input type="button" value="Finalize" class="btn" id="finalize" onclick="infonumber()">
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Gabriel Rezende</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,7 +1,6 @@
 function mtable() {
     let n = document.getElementById('multiply')
     let table = document.getElementById("tabletxt")
-    let hidden = document.getElementById('hidden')
 
     if (n.value.length == 0) {
         alert("Please enter a number")
@@ -18,7 +17,4 @@ function mtable() {
             table.appendChild(option)
         }
     }
-
-
-    
 }

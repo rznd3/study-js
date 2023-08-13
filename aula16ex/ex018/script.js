@@ -35,4 +35,37 @@ function add() {
 
     num.value = ''
     num.focus()
+    res.innerHTML = ''
+}
+
+
+function info() {
+    if (list.length != 0) {
+
+        list = list.sort(function(a, b){return a-b})
+        let total = Number(list.length)
+        let bigger =  list[Number(total - 1)]
+        let smaller = list[0]
+        let sum = 0
+        
+        //sum
+        for (let i in list) {
+            sum += list[i]
+        }
+
+        //average
+        let average = sum / total
+        
+        //print result
+        res.innerHTML += `<p>We have ${total} numbers registered</p>`
+        res.innerHTML += `<p>The biggest number is ${bigger}</p>`
+        res.innerHTML += `<p>The smallest number is ${smaller}</p>`
+        res.innerHTML += `<p>The sum of the values is equal to ${sum}</p>`
+        res.innerHTML += `<p>The average of the values is equal to ${average}</p>`
+
+    } else {
+        alert('Add values before finalizing')
+    }
+
+
 }

@@ -8,5 +8,5 @@ val.sort()
 // }
 
 for (let pos in val) {
-    console.log(`Position ${position} has the value ${val[position]}`)
+    console.log(`Position ${pos} has the value ${val[pos]}`)
 }

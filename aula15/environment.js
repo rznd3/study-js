@@ -7,7 +7,8 @@ console.log(num)
 console.log(`The array has ${num.length} positions`)
 console.log(`The first value of the array is ${num[0]}`)
 
-let pos = num.indexOf(3)
+let pos = num.indexOf(3) // search by number
+                         // -1 = not found
 
 if (pos == -1) {
     console.log(`Value not found`)

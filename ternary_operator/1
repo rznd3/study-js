@@ -1,0 +1,13 @@
+// const anoNascimento = 1980
+// let Millennial
+
+// if (anoNascimento >= 1981 && anoNascimento <= 1996) {
+//     Millennial = true
+// } else {
+//     Millennial = false
+// }
+
+// Ternary
+
+const anoNascimento = 1980
+const Millennial = (anoNascimento >= 1981 && anoNascimento) ? true : false

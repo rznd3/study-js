@@ -22,4 +22,4 @@ const matchPhone = database.match(allPhones)
 console.log(matchPhone)
 
 const matchCel = database.match(patternCel)
-console.log(matchCel)
+console.log(matchCel)   

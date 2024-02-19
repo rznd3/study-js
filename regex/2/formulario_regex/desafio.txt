@@ -1,0 +1,19 @@
+^([A-Za-zÀ-ÿ]+)((\s[A-Za-zÀ-ÿ]+)+,)(\s\d+)([A-Z]?),(\sCEP)(\s\d{5}-\d{3})$
+
+
+// Caso quisesse pegar também os casos em que são exibidos mais de uma letra (mesmo sendo diferente) perto do número
+
+^([A-Za-zÀ-ÿ]+)((\s[A-Za-zÀ-ÿ]+)+,)(\s\d+)([A-Z]?)\5.{0,}?,(\sCEP)(\s\d{5}-\d{3})$
+
+// Não precisa do ponto de interrogação, pois fica redundante
+^([A-Za-zÀ-ÿ]+)((\s[A-Za-zÀ-ÿ]+)+,)(\s\d+)([A-Z]?)\5.{0,},(\sCEP)(\s\d{5}-\d{3})$
+
+// Outra forma de fazer e talvez mais concisa
+^([A-Za-zÀ-ÿ]+)((\s[A-Za-zÀ-ÿ]+)+,)(\s\d+)([A-Z]?)\5.+?,(\sCEP)(\s\d{5}-\d{3})$
+                                                   // Caso tire esse + (que basicamente quer dizer "quantas mais ocorrências tiverem")
+                                                        3 ocorrências de letras podem ocorrer, pois: primeira ocorrência + backreference (1) 
+                                                        + . (1 - que diz que pode ser qualquer outra caracter)
+
+
+// Resposta definitiva para os casos em que tem mais de uma letra
+^([A-Za-zÀ-ÿ]+)((\s[A-Za-zÀ-ÿ]+)+,)(\s\d+)([A-Z]+?),(\sCEP)(\s\d{5}-\d{3})$

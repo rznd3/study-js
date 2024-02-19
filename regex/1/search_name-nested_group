@@ -6,3 +6,6 @@ const patternName = /^([A-Za-zÀ-ÿ]+)((\s[A-Za-zÀ-ÿ]+)+)/gm
 
 const matchName = database.match(patternName)
 console.log(matchName)
+
+
+//^([A-Za-zÀ-ÿ]+)((\s[A-Za-zÀ-ÿ]+)+,)(\s\d+,?([A-Z],))(\sCEP)(\s\d{5}-\d{3})$

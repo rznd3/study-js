@@ -23,6 +23,7 @@ const getVideoDetails = (video, callback) => {
   }, 2500);
 };
 
+
 const user = loginUser(
   "gabriel@email.com",
   "123456",

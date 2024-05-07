@@ -1,6 +1,6 @@
 const betterDeveloper = 'gabriel'
 
-function whoIsBetterCallback(callback, errorCallback) {
+function whoIsBetterCallback() {
 
     return new Promise((resolve, reject) => {
 
